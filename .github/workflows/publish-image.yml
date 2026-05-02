@@ -48,7 +48,7 @@ jobs:
           tags: |
             # Default tag 'latest' on main branch
             type=raw,value=latest,enable={{is_default_branch}}
-            # Tag based on git tag (v1.0.0)
+            # Tag based on git tag (v2.0.0)
             type=ref,event=tag
             # Tag based on sha (optional for debugging)
             type=sha,format=long

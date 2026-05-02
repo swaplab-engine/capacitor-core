@@ -17,15 +17,19 @@ This image (`swaplab-engine/capacitor-core`) serves as the foundation for our bu
 ## 🛠️ Technology Stack
 
 This image is built on top of **Ubuntu 22.04 (Jammy)** and includes the following pre-configured environment:
-
+> img tag: v2.0.0
 | Component | Details | Purpose |
 | :--- | :--- | :--- |
-| **Android SDK** | Platform 35, Build Tools 35.0.0 | Compiling Android Apps |
-| **Gradle** | Version 8.11.1 | Android Build System |
-| **Node.js** | v20.x (LTS) | JavaScript Runtime |
-| **Capacitor CLI** | v7.1.0 | Core Capacitor Framework |
+| **Android SDK** | Platform 36, Build Tools 36.0.0 | Compiling Android Apps |
+| **Gradle** | Version 8.13 | Android Build System |
+| **Node.js** | v22.x (LTS) | JavaScript Runtime |
+| **Capacitor CLI** | v8.3.1 | Core Capacitor Framework |
 | **Ruby & CocoaPods**| Latest | iOS Dependency Management |
 | **Hooks Support** | `xml2js`, `plist` | Cordova Plugin Compatibility |
+
+* **Tag image v1.0.0** [v1.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v1.0.0)
+* **Tag image v2.0.0** [v2.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v2.0.0)
+
 
 ---
 

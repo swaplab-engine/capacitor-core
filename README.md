@@ -17,7 +17,10 @@ This image (`swaplab-engine/capacitor-core`) serves as the foundation for our bu
 ## 🛠️ Technology Stack
 
 This image is built on top of **Ubuntu 22.04 (Jammy)** and includes the following pre-configured environment:
+---
 > img tag: v2.0.0
+---
+
 | Component | Details | Purpose |
 | :--- | :--- | :--- |
 | **Android SDK** | Platform 36, Build Tools 36.0.0 | Compiling Android Apps |
@@ -27,10 +30,9 @@ This image is built on top of **Ubuntu 22.04 (Jammy)** and includes the followin
 | **Ruby & CocoaPods**| Latest | iOS Dependency Management |
 | **Hooks Support** | `xml2js`, `plist` | Cordova Plugin Compatibility |
 
-* **Tag image v1.0.0** [v1.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v1.0.0)
-* **Tag image v2.0.0** [v2.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v2.0.0)
-
-
+---
+* **Tag image:** [v1.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v1.0.0)
+* **Tag image:** [v2.0.0](https://github.com/swaplab-engine/capacitor-core/releases/tag/v2.0.0)
 ---
 
 ## 🛡️ Security Philosophy: Freedom & Safety

@@ -47,12 +47,6 @@ RUN freshclam
 # If ClamAV (Virus), Trivy (Dependency), or Semgrep (Code) detects any
 # CRITICAL THREATS, the build process will be IMMEDIATELY ABORTED.
 #
-# PUBLIC TRANSPARENCY:
-# To ensure accountability, details of the threats causing the build failure 
-# are logged publicly (isolated & anonymized) on our Security Dashboard. 
-# Customers can verify our system integrity here:
-#
-# 📊 Dashboard: https://security-stats.swaplab.net
 # ===================================================================
 
 # -------------------------------------------------------------------
@@ -105,25 +99,8 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && rm -rf /var/lib/apt/lists/*
 
 # Capacitor CLI & CocoaPods
-RUN npm install -g @capacitor/cli@8.3.1
+RUN npm install -g @capacitor/cli@8.5.2
 RUN gem install cocoapods
-
-# -------------------------------------------------------------------
-# 6. Cordova Plugin Compatibility (AdMob Hooks)
-# -------------------------------------------------------------------
-# We pre-install 'xml2js' and 'plist' globally to support Cordova AdMob 
-# plugins that rely on Hook Scripts to inject variables (e.g., APP_ID) 
-# into AndroidManifest.xml or Info.plist on Capacitor platforms.
-#
-# Officially Supported Plugins:
-# 1. EMI-INDO: https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob
-# 2. AdMob Plus: https://github.com/admob-plus/admob-plus
-# 3. Community AdMob: https://github.com/EYALIN/community-admob-plus
-#
-# Hook Mechanism Reference:
-# https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob/blob/main/capacitor-hook-admob-ids.js
-# -------------------------------------------------------------------
-RUN npm install -g xml2js plist
 
 # Final Environment Variables Setup
 ENV GRADLE_USER_HOME=/github/workspace/.gradle

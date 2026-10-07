@@ -6,7 +6,7 @@
 
 ## 📖 Overview
 
-This repository hosts the **Public Base Image** used by the [SwapLab Capacitor Builder Service](https://capacitor.swaplab.net).
+This repository hosts the **Public Base Image** used by the [SwapLab Capacitor Builder Service](https://swaplab.net).
 
 At SwapLab, we believe in **Supply Chain Transparency**. While our proprietary build logic (`build-engine`) remains private to protect our intellectual property, the **environment** in which your code runs is open for public audit.
 
